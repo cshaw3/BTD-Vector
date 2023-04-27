@@ -6,10 +6,10 @@
 <meta charset="utf-8">
 <script src="p5.min.js"></script>
 <script src="Vectorsketch.js"></script>
-<link href="Styles.css" rel="stylesheet" type="text/css">
+<link href="../Styles.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.typekit.net/nnv2tdn.css">
 <script src="script.js"></script>
-<link rel="icon" type="image/x-icon" href="/images/favicon7.png">
+<link rel="icon" type="image/x-icon" href="../Images/favicon.png">
 </head>
 
 
@@ -28,13 +28,14 @@
 			
 		<div class="infoBlock">
             <div class="textBlock">
-			<h1>What is a vector?</h1s>
+			<!-- <h1>What is a vector?</h1> -->
+			<h2>What is a vector?</h2>
             <p>Computer graphics best friend, the vector has a long storied 
-                history stretching back centuries. Starting as the humble tool of mathematicians used help explain the world around us, its uses have grown over time to fill many niches.</p>
-            <p>The classical definition of a vector is something that contains both a magnitude (or length) and a direction. This definition is a bit confusing on its face so we won't dwell on it too long. What is important to take from this definition is that a vector is a singular object composed of multiple distinct parts. A vector composed of two parts is referred to as a 2D vector, a vector with three parts is referred to as 3D vector, four parts 4D, 5 parts 5D, and so on into infinity. For our needs we won't be going beyond 4D vectors.</p>
+                history stretching back centuries. Starting as the humble tool of mathematicians, used help explain the world around us. Over time its uses have grown to help fill many niches.</p>
+            <p>The classical definition of a vector is something that contains both a magnitude (or length) and a direction. This definition is a bit confusing on its face so we won't dwell on it too long. What is important to take from this definition is that <span class="brmed">a vector is a singular object made up of multiple sub parts</span>. A vector composed of two parts is referred to as a 2D vector, a vector with three parts is referred to as 3D vector, four parts 4D, 5 parts 5D, and so on into infinity. For our needs we won't be going beyond 4D vectors.</p>
             </div>
 
-			<div id="InteractiveBlock1">
+			<div id="InteractiveBlock1"  style="width: 40%">
 			<div id="slider-container">
 					<div class="img-comp-container">
 						<div class="img-comp-img">
@@ -46,18 +47,16 @@
 					</div>
 				
 				<div id="sliderTextContainer">
-					<p class="explainerText">The image on the left side shows the 2D vector points that make up the image on the right. Try clicking the center line to see the difference. <span class="brmed"></span>The points are connected by 
-						<a href="url">cubic bezier curves</a>
-						 which give the image its shape and form.</p>			
+					<p class="explainerTextWide" style="width: 70%">The image on the left side shows the <span class="brmed">2D vector points</span> that make up the image on the right. Try clicking the center line to see the difference. The points are connected by bezier curves which give the image its shape and form.</p>			
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="SpaceMaker" style="height: 80px"></div>
 	<div class="infoBlock">
 		<div class="textBlock">
-			<h1>Applications</h1>
-                <h2>How can They be used? </h2>
+			<!-- <h1>Applications</h1> -->
+                <h2>Applications Of Vectors</h2>
                 <p>Now that we have a basic understand of what makes a vector let’s take a look at some examples of vectors used in computer graphics. </p>
                 <p> An example of a vector used in computer graphics would be position of an object. Now because we live in the future we can represent position in both the second and third dimension. </p>
                 <p> A 2D position vector could be represented like this: <b>(X,Y).</b> Where <b>X</b> denotes how far left or right on the screen the object is, while <b>Y</b> denotes how far up or down something is. If you have ever played a 2D Mario game Mario’s position on the screen can be represented by a 2D vector. </p> 
@@ -66,11 +65,11 @@
                 <p>A 4D color vector can represented like this: <b>(<span style="color:#FF0000">R</span>,<span style="color:#00ff00">G</span>,<span style="color:#0095ff">B</span>,A)</b>. Unlike the last two vectors where the numbers that made up the parts of the vector could theoretically be any number value the numbers that make up the color vector usually go between 0 and 255. This is due to some computer bit byte nonsense that wont be of importance here, its just the standard. The screen your reading this on is made up of tiny little dots called pixels. Every pixel has with it a 4D color vector telling that pixel what color it should be. The <b>R</b>, <b>G</b>, and <b>B</b> components control how red, green, and blue, a pixel is while the A which stands for alpha controls how transparent or see through the pixel is. for example a <b>(<span style="color:#FF0000">255</span>,<span style="color:#00ff00">0</span>,<span style="color:#0095ff">0</span>,255)</b> is a pure red pixel while the color <b>(<span style="color:#FF0000">255</span>,<span style="color:#00ff00">0</span>,<span style="color:#0095ff">255</span>,255)</b> would be half full red and half full blue so they would mix and form a bright pinkish purple color, and the color <b>(<span style="color:#FF0000">0</span>,<span style="color:#00ff00">255</span>,<span style="color:#0095ff">0</span>,128)</b> would be full green but at half alpha meaning it would blend 50% transparent (there is not actually a pixel behind other pixels some fancy math just blends the two colors together)</p>
 
 			</div>
-			<div id="InteractiveBlock2">
+			<div id="InteractiveBlock2" style="width: 40%">
 			<div id="movingShapeContainer">
 				<div id="MovingShape"></div>
 				<div id="MovingShapeText">
-					<p class="explainerText">This square is moving around in 2D space. When it goes left and right the first value called the X value changes, when it moves up and down the second or Y value changes. <span class="brmed"></span>This square is not animated frame by frame. some fancy math is smoothly <a href="">Interpolating</a> them. Try hovering over the box the square is in to control where it is on the screen.</p>
+					<p class="explainerTextWide" style="padding-left: 0; width: 100%;" >This demo shows off how vectors can be used to store information. As you can see this square is moving back and forth on the screen and its position is represented by a 2D vector, where the first component of the vector is the <span class="brmed">X-coordinate</span> (or where it is left and right on the screen) and the second component is the <span class="brmed">Y-coordinate</span> (or where it is up and down on the screen). Try hovering over the demo and you will see the square follows your cursor, notice how the X and Y coordinates change when you move the square around.</p>
 				</div>
 			</div>
 			</div>
@@ -79,11 +78,11 @@
 	</div>
 		<div id="RightCol"></div>
 	</div>
-
+	<div id="MetalDivider"></div>
     <div id="bottomNav">
-		<a style="padding-right: 42vw;" href="../HomePage/HomePage.html">&#8592;PREV </a>
+		<a style="padding-right: 42vw;" href="../NoiseSite/NoiseSite.html">&#8592;PREV </a>
 		<a href="../BlendModeSite/BlendMode.html" >NEXT&#8594; </a>
-	</div>
+	</div> <div id="MetalDivider"></div>
 	
 	
 	

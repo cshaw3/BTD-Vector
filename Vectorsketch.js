@@ -305,18 +305,14 @@
             sketch.imageMode(sketch.CENTER);
             sketch.translate(0, 0, 0);
             sketch.image(Metalborder,sketch.width/2,sketch.height/2, Metalborder.width/1.9, Metalborder.height/1.9);
+            // console.log(mouseInBounds);
             
 
         };
 
 
         sketch.followSquare = () =>{
-            
             sketch.fill("White");
-            
-
-           
-           
             if(mouseInBounds == true){
                 sketch.text('X: '+ sketch.ceil(sketch.mouseX), 145,70);
                 sketch.text('Y: '+ sketch.ceil(sketch.mouseY), 260,70);
