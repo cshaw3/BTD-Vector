@@ -264,7 +264,7 @@ video#bgVideo {
     /*set the appearance of the slider:*/
     width: 40px;
     height: 400px;
-    background-image: url("VectorSite/Images/ImageSlider.png");
+    background-image: url("Images/ImageSlider.png");
     opacity: 0.9;
   }
 
