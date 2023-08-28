@@ -240,7 +240,7 @@ video#bgVideo {
 /* VECTOR SPECIFIC CSS */
 #slider-container{
     /* background-image: url(Images/ImageCompareBorder2.png); */
-    background-image: url("VectorSite/Images/ImageCompareBorder2.png");
+    background-image: url("Images/ImageCompareBorder2.png");
     background-size: 32rem;
     display: flex;
     flex-direction: column;
@@ -264,7 +264,7 @@ video#bgVideo {
     /*set the appearance of the slider:*/
     width: 40px;
     height: 400px;
-    background-image: url("VectorSite/Images/ImageSlider.png");
+    background-image: url("Images/ImageSlider.png");
     opacity: 0.9;
   }
 
@@ -297,7 +297,7 @@ video#bgVideo {
 #movingShapeContainer{
     
     padding: 20px;
-    background-image: url("VectorSite/Images/MovingSquareBorder.png");
+    background-image: url("Images/MovingSquareBorder.png");
     background-repeat: no-repeat;
     background-size: 34rem;
     margin-top: 100px;
@@ -373,7 +373,7 @@ video#bgVideo {
 #MetalDivider{
     display: flex;
     height: 20px;
-    /* background-image: url("../Images/MetalDivider.png"); */
+    /* background-image: url("Images/MetalDivider.png"); */
     background-image: url("Images/MetalDivider.png");
 }
 /* END OF HOME PAGE SPECIFIC CSS */
@@ -413,7 +413,7 @@ video#bgVideo {
  
 
 .InteractiveBorder{
-    background-image: url("./Images/InteractiveBorderBig.png");
+    background-image: url("Images/InteractiveBorderBig.png");
     margin-top: 30px;
     width: 600px;
     height: 600px;
